@@ -32,4 +32,7 @@ example
   * color
   * font
 
+note - two way to implement it different different warpper classes or one wrapper and all  methods 
+
+
 note - now using facade make one service with all these functionalities 
