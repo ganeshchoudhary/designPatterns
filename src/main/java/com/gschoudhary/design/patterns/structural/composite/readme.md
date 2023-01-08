@@ -22,3 +22,13 @@ Composite is a structural design pattern that lets you compose objects into tree
   * item and boxes problem -> interface getprice()
   * Armies of most countries are structured as hierarchies.An army consists of several divisionHierarchies; a division is a set of brigades, and a brigade consists of platoons, which can be broken down into squads. Finally, a squad is a small group of real soldiers. Orders are given at the top of the hierarchy and passed down onto each level until every soldier knows what needs to be done.
   * Country-> states-> district hierarchy 
+
+
+                Company
+                  CEO
+      CTO         CBO         CFO
+
+  
+
+Note: head will have all the child access
+    

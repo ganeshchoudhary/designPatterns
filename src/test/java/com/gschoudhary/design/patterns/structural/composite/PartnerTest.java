@@ -1,13 +1,17 @@
 package com.gschoudhary.design.patterns.structural.composite;
 
+import com.gschoudhary.design.patterns.structural.composite.staticLevel.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
 //problem
 // create hierarchy
 // get hierarchy of that level or user
 //
 class PartnerTest {
-    Partner sonata = new Partner("sonata");
+    RootNode ceo = new RootNode(new User("sucharita", "ceo"), "INDIAN HEAD");
+
+    Partner sonata = new Partner("sonata", ceo);
 
     @BeforeEach
     void setUp() {
@@ -15,28 +19,20 @@ class PartnerTest {
 
     @Test
     public void createPartnerHierarchy() {
-        sonata.addRole("National-Head");
-        sonata.addRole("State-Head");
-        sonata.addRole("Regional-Head");
-        sonata.addRole("Branch manager");
-        sonata.addRole("Center");
-        sonata.addHierarchy(new PartnerHierarchy("India", sonata.getIndexOf("National-Head"), "National-Head")
-                .addOrReplaceUser("sayar")
-                .addChildHierarchy(
-                        new PartnerHierarchy("Rajasthan", sonata.getIndexOf("State-Head"), "State-Head")
-                                .addOrReplaceUser("ganesh")
-                                .addChildHierarchy(
-                                        new PartnerHierarchy("Jaipur", sonata.getIndexOf("Regional-Head"), "Regional-Head").addOrReplaceUser("ram").addChildHierarchy(new LeafHierarchy("Champapura", sonata.getIndexOf("Center"), "Center").addCustomer("Ramu"))))
-                .addChildHierarchy(new PartnerHierarchy("karnataka", sonata.getIndexOf("State-Head"), "State-Head")));
-        sonata.addHierarchy(new PartnerHierarchy("Srilanka", sonata.getIndexOf("Notional-Head"), "National-Heade")
-                .addChildHierarchy(new PartnerHierarchy("s-1", sonata.getIndexOf("State-Head"), "State-Head"))
-                .addChildHierarchy(new PartnerHierarchy("s2", sonata.getIndexOf("State-Head"), "State-Head"))
-        );
-        sonata.print();
+        ceo.addChild(new ChildNode(new User("natasha", "cto"), "National head")
+                .addChild(new ChildNode(new User("jagan", "Senior engineering head"), "TechHead")
+                        .addChild(new LeafHierarchy(new User("ganesh singh", "agent")).addCustomer("anurag")))
+                .addChild(new ChildNode(new User("Sreehari", "engineering head"), "TechHead")));
+        ceo.addChild(new ChildNode(new User("vipul", "CBO"), "National head"));
+        ceo.addChild(new ChildNode(new User("punit", "CFO"), "National head"));
+        sonata.printUserHierarchy();
+
     }
 
     @Test
-    public void printUserHierarchy(){
-        sonata.printUserHierarchy("sayar",1);
+    public void printUserHierarchy() {
+        System.out.println("print hierarchy of a user");
+        
+
     }
 }
