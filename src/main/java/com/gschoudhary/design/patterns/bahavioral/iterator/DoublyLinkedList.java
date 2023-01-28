@@ -1,7 +1,7 @@
 package com.gschoudhary.design.patterns.bahavioral.iterator;
 
 import java.util.Iterator;
-
+import java.util.Collection;
 public class DoublyLinkedList {
     public DoublyNode insertNode(DoublyNode root, int data) {
         if (root == null) {

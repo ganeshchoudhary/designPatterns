@@ -1,7 +1,6 @@
 package com.gschoudhary.design.patterns;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import sun.security.krb5.internal.TGSRep;
 
 // not make method or variable class must be public
 @FunctionalInterface
