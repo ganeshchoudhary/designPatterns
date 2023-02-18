@@ -4,6 +4,10 @@ import com.gschoudhary.design.patterns.bahavioral.ChainOfResponsibility.classLev
 import com.gschoudhary.design.patterns.bahavioral.ChainOfResponsibility.classLevel.IPCheckHandler;
 import com.gschoudhary.design.patterns.bahavioral.ChainOfResponsibility.classLevel.TokenCheckHandler;
 
+import java.util.Optional;
+import java.util.function.Function;
+import java.util.stream.Stream;
+
 public class UserService {
 
 
@@ -30,5 +34,25 @@ public class UserService {
         BaseHandler baseHandler = new BaseHandler(new TokenCheckHandler(new IPCheckHandler(null)));
         baseHandler.handle(request);
         System.out.println("done " + request);
+
+//        Stream
+        Function<String, String> f1 = (str )-> str +" fg ";
+        System.out.println( f1.andThen((str)-> "ganesh " + str).apply("test "));
+
+        System.out.println(new functional().andThen(new functional()).apply("name"));
+
+    }
+
+
+    class functional implements Function<String, String>{
+
+//        private String name;
+//        public functional(String name){
+//            this.name = name;
+//        }
+        @Override
+        public String apply(String s) {
+            return s + "-> ";
+        }
     }
 }
