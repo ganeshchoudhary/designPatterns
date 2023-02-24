@@ -1,4 +1,4 @@
-package com.gschoudhary.design.patterns.structural.decorator;
+package com.gschoudhary.design.patterns.structural.decorator.example1;
 
 public class CarImplementation implements Car {
     private String name;
@@ -7,7 +7,7 @@ public class CarImplementation implements Car {
 
     private String model;
 
-    CarImplementation(String name) {
+    public CarImplementation(String name) {
         this.model = "XSL";
         this.name = name;
         this.price = 1000000;

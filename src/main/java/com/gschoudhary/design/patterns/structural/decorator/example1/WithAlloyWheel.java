@@ -1,4 +1,4 @@
-package com.gschoudhary.design.patterns.structural.decorator;
+package com.gschoudhary.design.patterns.structural.decorator.example1;
 
 public class WithAlloyWheel extends CarDecorator {
     WithAlloyWheel(Car car) throws Exception {

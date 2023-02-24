@@ -76,6 +76,8 @@ public class Application {
         t1.start();
         Thread t2 = new Thread1();
         t2.start();
+
+        System.out.println(t1 instanceof Thread);
     }
 
 }

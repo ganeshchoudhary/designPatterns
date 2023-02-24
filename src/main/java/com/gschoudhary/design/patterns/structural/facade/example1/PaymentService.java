@@ -1,6 +1,6 @@
-package com.gschoudhary.design.patterns.structural.facade;
+package com.gschoudhary.design.patterns.structural.facade.example1;
 
-interface PaymentService {
+public interface PaymentService {
     void makePaymentWithUpi();
 
     void makePaymentWithDebitCard();

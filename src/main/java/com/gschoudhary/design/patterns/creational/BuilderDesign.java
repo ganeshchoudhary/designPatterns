@@ -4,12 +4,10 @@ class Person {
     private String name;
 
     private String college;
-
     private Person(String name, String college) {
         this.name = name;
         this.college = college;
     }
-
     @Override
     public String toString() {
         return "Person{" +
@@ -22,7 +20,7 @@ class Person {
         return new PersonBuilder();
     }
 
-    static class PersonBuilder {
+    public static class PersonBuilder {
         private String name;
 
         private String college;

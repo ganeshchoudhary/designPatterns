@@ -1,7 +1,7 @@
-package com.gschoudhary.design.patterns.structural.decorator;
+package com.gschoudhary.design.patterns.structural.decorator.example1;
 
 public class CarDecoratorImpl extends CarDecorator {
-    CarDecoratorImpl(Car car) throws Exception {
+    public CarDecoratorImpl(Car car) throws Exception {
         super(car);
     }
 

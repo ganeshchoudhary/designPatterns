@@ -1,4 +1,9 @@
 package com.gschoudhary.design.patterns.structural.decorator;
+
+import com.gschoudhary.design.patterns.structural.decorator.example1.Car;
+import com.gschoudhary.design.patterns.structural.decorator.example1.CarDecoratorImpl;
+import com.gschoudhary.design.patterns.structural.decorator.example1.CarImplementation;
+
 // can be implemented with classes or methods with decoration
 // enum or object decorated -> for decoration
 // order decoration (custom ordered item-> add on items -> tips -> instruction -> gift )  or car decoration -> custom car-> extra add benefits -> tips -> ...

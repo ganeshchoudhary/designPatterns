@@ -1,4 +1,4 @@
-package com.gschoudhary.design.patterns.structural.facade;
+package com.gschoudhary.design.patterns.structural.facade.example1;
 
 public class DebitCardPaymentImpl implements Payment{
     @Override

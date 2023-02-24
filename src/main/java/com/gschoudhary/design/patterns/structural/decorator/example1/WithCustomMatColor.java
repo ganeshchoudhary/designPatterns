@@ -1,4 +1,4 @@
-package com.gschoudhary.design.patterns.structural.decorator;
+package com.gschoudhary.design.patterns.structural.decorator.example1;
 
 public class WithCustomMatColor extends CarDecorator {
     private String color;
