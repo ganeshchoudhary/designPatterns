@@ -1,7 +1,6 @@
 package com.gschoudhary.design.patterns.bahavioral.ChainOfResponsibility.classLevel;
 
-import com.gschoudhary.design.patterns.bahavioral.ChainOfResponsibility.BasicHandler;
-import com.gschoudhary.design.patterns.bahavioral.ChainOfResponsibility.Request;
+import com.gschoudhary.design.patterns.bahavioral.ChainOfResponsibility.workflow.Request;
 
 public class IPCheckHandler extends BaseHandler {
     public IPCheckHandler(BaseHandler next) {

@@ -1,5 +1,7 @@
 package com.gschoudhary.design.patterns.bahavioral.ChainOfResponsibility.chainflow;
 
+import com.gschoudhary.design.patterns.bahavioral.ChainOfResponsibility.workflow.Request;
+
 import java.util.LinkedList;
 
 public class RequestHandlerImpl implements RequestHandler {
@@ -11,12 +13,12 @@ public class RequestHandlerImpl implements RequestHandler {
     }
 
     @Override
-    public void handle() {
+    public void handle(Request request) {
         System.out.println("basic handler");
         try {
             for (RequestHandler handler : handlers
             ) {
-                handler.handle();
+                handler.handle(request);
             }
         }catch (Exception e){
             System.out.println("exception occurred");

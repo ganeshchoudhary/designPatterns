@@ -1,6 +1,6 @@
 package com.gschoudhary.design.patterns.bahavioral.ChainOfResponsibility.classLevel;
 
-import com.gschoudhary.design.patterns.bahavioral.ChainOfResponsibility.Request;
+import com.gschoudhary.design.patterns.bahavioral.ChainOfResponsibility.workflow.Request;
 
 public class TokenCheckHandler extends BaseHandler {
     public TokenCheckHandler(BaseHandler next) {

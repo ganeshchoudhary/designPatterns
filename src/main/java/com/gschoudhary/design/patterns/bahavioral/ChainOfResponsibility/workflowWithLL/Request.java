@@ -1,4 +1,4 @@
-package com.gschoudhary.design.patterns.bahavioral.ChainOfResponsibility;
+package com.gschoudhary.design.patterns.bahavioral.ChainOfResponsibility.workflow;
 
 public class Request {
     public String ip;

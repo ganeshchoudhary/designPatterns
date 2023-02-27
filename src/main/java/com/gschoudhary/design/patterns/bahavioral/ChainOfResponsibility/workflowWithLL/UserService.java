@@ -1,12 +1,10 @@
-package com.gschoudhary.design.patterns.bahavioral.ChainOfResponsibility;
+package com.gschoudhary.design.patterns.bahavioral.ChainOfResponsibility.workflow;
 
 import com.gschoudhary.design.patterns.bahavioral.ChainOfResponsibility.classLevel.BaseHandler;
 import com.gschoudhary.design.patterns.bahavioral.ChainOfResponsibility.classLevel.IPCheckHandler;
 import com.gschoudhary.design.patterns.bahavioral.ChainOfResponsibility.classLevel.TokenCheckHandler;
 
-import java.util.Optional;
 import java.util.function.Function;
-import java.util.stream.Stream;
 
 public class UserService {
 

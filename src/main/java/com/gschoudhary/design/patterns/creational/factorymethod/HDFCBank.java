@@ -1,6 +1,5 @@
 package com.gschoudhary.design.patterns.creational.factorymethod;
 
-import com.gschoudhary.design.patterns.creational.Bank;
 
 class HDFCBank implements Bank {
     @Override
