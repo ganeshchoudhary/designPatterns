@@ -10,7 +10,8 @@ public class YesBankPaymentServiceImpl implements PaymentService {
     @Override
     public void makePayment() {
 
-        System.out.println("Making payment with " + paymentMode.getPaymentMode());
+        System.out.println("Payment Mode " + paymentMode.getPaymentMode());
+        System.out.println(paymentMode.makePayment());
 
     }
 }
