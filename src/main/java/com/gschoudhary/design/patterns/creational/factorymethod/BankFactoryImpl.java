@@ -1,7 +1,7 @@
 package com.gschoudhary.design.patterns.creational.factorymethod;
 
 
-class BankFactoryImpl implements BankFactory {
+public class BankFactoryImpl implements BankFactory {
     @Override
     public Bank getBank(String name) {
         if (name.equals("HDFC")) {

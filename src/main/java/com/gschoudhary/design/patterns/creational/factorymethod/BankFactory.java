@@ -1,5 +1,5 @@
 package com.gschoudhary.design.patterns.creational.factorymethod;
 
-interface BankFactory {
+public interface BankFactory {
     Bank getBank(String name);
 }

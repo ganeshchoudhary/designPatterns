@@ -1,13 +1,15 @@
 package com.gschoudhary.design.patterns.creational;
 
-class Person {
+public class Person {
     private String name;
 
     private String college;
+
     private Person(String name, String college) {
         this.name = name;
         this.college = college;
     }
+
     @Override
     public String toString() {
         return "Person{" +
@@ -16,7 +18,7 @@ class Person {
                 '}';
     }
 
-    public static PersonBuilder builder(){
+    public static PersonBuilder builder() {
         return new PersonBuilder();
     }
 
@@ -24,8 +26,6 @@ class Person {
         private String name;
 
         private String college;
-
-
 
         public PersonBuilder setName(String name) {
             this.name = name;
@@ -42,12 +42,4 @@ class Person {
         }
     }
 
-}
-public class BuilderDesign {
-    public static void main(String[] args) {
-        Person person = Person.builder()
-                .setName("ganesh")
-                .build();
-        System.out.println(person.toString());
-    }
 }

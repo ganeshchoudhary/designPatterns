@@ -1,5 +1,5 @@
 package com.gschoudhary.design.patterns.creational.factorymethod;
 
-interface Bank {
+public interface Bank {
     void printDetails();
 }

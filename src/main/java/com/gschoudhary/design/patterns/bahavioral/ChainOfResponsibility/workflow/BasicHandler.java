@@ -1,32 +1,31 @@
 package com.gschoudhary.design.patterns.bahavioral.ChainOfResponsibility.workflow;
 
-public class BasicHandler  {
-    BasicHandler next;
-    int a=10;
-
+public class BasicHandler implements Handler  {
+   protected Handler next;
     
 
     BasicHandler() {
 
     }
 
-    public void add(BasicHandler handler) {
+    @Override
+    public Handler addNext(Handler handler) {
         if (next == null) {
             next = handler;
         } else {
-            next.add(handler);
+            next.addNext(handler);
         }
-
-
+        return this;
     }
 
 
+    @Override
     public void handle(Request request) {
+        System.out.println("starting basic Handler");
         if(next == null){
             return;
         }else {
             next.handle(request);
-            next= next.next;
         }
 
     }

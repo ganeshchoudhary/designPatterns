@@ -1,5 +1,5 @@
 package com.gschoudhary.design.patterns.bahavioral.ChainOfResponsibility.chainflow;
-
+import com.gschoudhary.design.patterns.bahavioral.ChainOfResponsibility.*;
 import org.junit.jupiter.api.Test;
 
 class RequestControllerTest {
@@ -9,9 +9,11 @@ class RequestControllerTest {
 
     @Test
     void execute() {
+
+
         requestHandler
                 .addHandler(new AuthenticationHandler())
-                .addHandler(new CustomHandler()).handle();
+                .addHandler(new CustomHandler()).handle(null);
         requestController.execute();
 
     }

@@ -11,7 +11,7 @@ public class TokenHandler extends BasicHandler {
         if(request.ip == null){
             return;
         }else {
-            super.handle(request);
+            next.handle(request);
         }
     }
 }
