@@ -32,7 +32,5 @@ class PartnerTest {
     @Test
     public void printUserHierarchy() {
         System.out.println("print hierarchy of a user");
-        
-
     }
 }

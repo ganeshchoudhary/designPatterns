@@ -15,16 +15,8 @@ class PaymentServiceImplTest {
 
     @Test
     void makePaymentWithUpi() {
-        paymentService.makePaymentWithUpi();
+        paymentService.makePayment();
     }
 
-    @Test
-    void makePaymentWithDebitCard() {
-        paymentService.makePaymentWithDebitCard();
-    }
 
-    @Test
-    void makePaymentWithCreditCard() {
-        paymentService.makePaymentWithCreditCard();
-    }
 }

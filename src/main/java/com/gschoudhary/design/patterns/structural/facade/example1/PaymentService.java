@@ -1,9 +1,18 @@
 package com.gschoudhary.design.patterns.structural.facade.example1;
 
-public interface PaymentService {
-    void makePaymentWithUpi();
+public abstract class PaymentService {
+    public final void makePayment(){
+        userDetail();
+        addressDetail();
+        orderDetail();
+        warehouseDetail();
+        paymentDetail();
+    }
 
-    void makePaymentWithDebitCard();
+    protected abstract void userDetail();
+    protected abstract void addressDetail();
+    protected abstract void orderDetail();
 
-    void makePaymentWithCreditCard();
+    protected abstract void warehouseDetail();
+    protected abstract void paymentDetail() ;
 }

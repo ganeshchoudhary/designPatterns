@@ -1,25 +1,34 @@
 package com.gschoudhary.design.patterns.structural.facade.example1;
 
-public class PaymentServiceImpl implements PaymentService {
-    private DebitCardPaymentImpl debitCardPayment = new DebitCardPaymentImpl();
-
-    private CreditCardImpl creditCard = new CreditCardImpl();
-
-    private UPIPaymentImpl upiPayment = new UPIPaymentImpl();
-
+public class PaymentServiceImpl extends PaymentService {
     @Override
-    public void makePaymentWithUpi() {
-        upiPayment.makePayment();
+    protected void userDetail() {
+        System.out.println("Checking user details");
 
     }
 
     @Override
-    public void makePaymentWithDebitCard() {
-        debitCardPayment.makePayment();
+    protected void addressDetail() {
+        System.out.println("validation address details");
+
+
     }
 
     @Override
-    public void makePaymentWithCreditCard() {
-        creditCard.makePayment();
+    protected void orderDetail() {
+        System.out.println("validation order details");
+
+
+    }
+
+    @Override
+    protected void warehouseDetail() {
+        System.out.println("validation warehouse details");
+    }
+
+    @Override
+    protected void paymentDetail() {
+        System.out.println("making payment");
+
     }
 }
