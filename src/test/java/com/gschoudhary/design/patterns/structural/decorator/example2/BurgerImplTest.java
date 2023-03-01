@@ -13,12 +13,12 @@ class BurgerImplTest {
     @Test
     void getBurger() {
         System.out.println(burger.getBurger());
-        System.out.println(new WithCheeseBurgerImpl(burger).getBurger());
-        System.out.println(new WithVeggieImpl(new WithCheeseBurgerImpl(burger)).getBurger());
+        System.out.println(new CheeseBurgerDecorator(burger).getBurger());
+        System.out.println(new ExtraVeggieBurgerDecorator(new CheeseBurgerDecorator(burger)).getBurger());
     }
     @Test
     void getBurger2() {
         System.out.println(burger.getBurger());
-        System.out.println(new WithVeggieImpl(burger).getBurger());
+        System.out.println(new ExtraVeggieBurgerDecorator(burger).getBurger());
     }
 }

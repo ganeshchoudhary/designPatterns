@@ -1,9 +1,9 @@
 package com.gschoudhary.design.patterns.structural.decorator.example1;
 
-public class WithCustomMatColor extends CarDecorator {
+public class ColorCarDecorator extends CarDecorator {
     private String color;
 
-    WithCustomMatColor(Car car, String color) throws Exception {
+    ColorCarDecorator(Car car, String color)  {
         super(car);
         this.color = color;
     }

@@ -1,7 +1,7 @@
 package com.gschoudhary.design.patterns.structural.decorator.example2;
 
-public class WithVeggieImpl extends BurgerWrapper {
-    WithVeggieImpl(Burger burger) {
+public class ExtraVeggieBurgerDecorator extends BurgerWrapper {
+    ExtraVeggieBurgerDecorator(Burger burger) {
         super(burger);
     }
 

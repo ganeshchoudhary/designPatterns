@@ -7,10 +7,10 @@ public class CarImplementation implements Car {
 
     private String model;
 
-    public CarImplementation(String name) {
-        this.model = "XSL";
+    public CarImplementation(String name, String model, int price) {
+        this.model = model;
         this.name = name;
-        this.price = 1000000;
+        this.price = price;
     }
 
     @Override
@@ -20,6 +20,6 @@ public class CarImplementation implements Car {
 
     @Override
     public String getCarDetails() {
-        return this.name + " " + this.model;
+        return this.name + " - " + this.model;
     }
 }
