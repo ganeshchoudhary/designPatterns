@@ -79,7 +79,7 @@ public class StreamsApplication {
 
         Map<String, List<Employee>> listMap  = Arrays.stream(arrayOfEmps).sorted(Comparator.comparing(a-> a.getAge()))
                 .collect(Collectors.groupingBy(x-> x.getAddress()));
-
+        System.out.println(listMap);
         listMap  = Arrays.stream(arrayOfEmps).sorted(Comparator.comparing(a-> a.getAge()))
                 .collect(Collectors.groupingBy(x-> x.getAddress(), Collectors.toList()));
         System.out.println(listMap);

@@ -29,24 +29,25 @@ public class MaxFrequency {
         );
 
 
-//        max digit repeation
-
+// converting all the digits in string then join them
         String arrayString = Arrays.stream(array).map(String::valueOf).collect(Collectors.joining());
         System.out.println(arrayString);
         List<Character> characterList = new ArrayList<>();
         for (Character c : arrayString.toCharArray()) {
             characterList.add(c);
         }
-
+// calculating character frequency  "123413342"
         Map<Character, Long> map3 = characterList.stream().collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
-        map3.entrySet().stream().filter(e -> e.getValue() <= 2).forEach(System.out::println);
-
+        System.out.println(map3);
+//{1=2, 2=2, 3=3, 4=2}
         Map<Character, List<Character>> map2 = characterList.stream().collect(Collectors.groupingBy(x -> x, Collectors.mapping(x -> x, Collectors.toList())));
-        map2.entrySet().stream().forEach(System.out::println);
 
-
+        System.out.println(map2);
+//{1=[1, 1], 2=[2, 2], 3=[3, 3, 3], 4=[4, 4]}
         char c = map3.entrySet().stream().max(Comparator.comparing(Map.Entry::getValue)).get().getKey();
-        System.out.println("max c  " + c);
+        System.out.println("max occurrence of char  " + c);
+//max occurrence of char  3
+        System.out.println(map2.entrySet().stream().collect(Collectors.counting()));
     }
 
     public static void main(String[] args) {
