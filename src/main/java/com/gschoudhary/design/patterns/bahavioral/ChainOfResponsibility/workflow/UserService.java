@@ -27,7 +27,7 @@ public class UserService {
 
 //        Stream
         Function<String, String> f1 = (str) -> str + " fg ";
-        System.out.println(f1.andThen((str) -> "ganesh " + str).apply("test "));
+        System.out.println(f1.andThen((str) -> "ganesh " + str).apply("com/gschoudhary/io "));
 
 
     }

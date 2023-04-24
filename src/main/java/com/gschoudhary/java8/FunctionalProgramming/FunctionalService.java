@@ -1,8 +1,7 @@
-package com.gschoudhary.design.patterns.functional;
+package com.gschoudhary.java8.FunctionalProgramming;
 
 import java.util.function.Consumer;
 import java.util.function.Function;
-import java.util.stream.Stream;
 
 public class FunctionalService {
     public static void main(String[] args) {

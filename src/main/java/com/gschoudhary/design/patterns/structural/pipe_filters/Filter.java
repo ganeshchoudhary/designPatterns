@@ -1,7 +1,9 @@
 package com.gschoudhary.design.patterns.structural.pipe_filters;
 
- interface Filter<I, O> {
-    O execute(I input);
+import java.io.IOException;
+
+public interface Filter<I, O> {
+    O execute(I input) ;
 
 
 

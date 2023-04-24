@@ -1,4 +1,4 @@
-package com.gschoudhary.design.patterns.functional;
+package com.gschoudhary.java8.FunctionalProgramming;
 
 import java.util.Comparator;
 import java.util.Iterator;

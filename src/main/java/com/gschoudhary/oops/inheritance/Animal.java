@@ -1,4 +1,4 @@
-package com.gschoudhary.design.patterns.oops.inheritance;
+package com.gschoudhary.oops.inheritance;
 
 public class Animal {
 

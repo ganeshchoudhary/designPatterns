@@ -1,4 +1,4 @@
-package com.gschoudhary.design.patterns;
+package com.gschoudhary.io;
 
 import com.google.gson.Gson;
 

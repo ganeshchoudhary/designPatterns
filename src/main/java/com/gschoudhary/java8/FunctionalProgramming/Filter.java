@@ -1,6 +1,5 @@
-package com.gschoudhary.design.patterns.functional;
+package com.gschoudhary.java8.FunctionalProgramming;
 
-import java.util.function.BinaryOperator;
 import java.util.function.Predicate;
 
 public interface Filter<I, O> {

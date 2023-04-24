@@ -6,4 +6,4 @@ Adapter is a structural design pattern, which allows incompatible objects to col
 
 
 * create adaptor interface 
-  * implement that interface and create constructor with adaptee
+  * implement that interface and create constructor with adapter

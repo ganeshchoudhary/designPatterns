@@ -1,5 +1,4 @@
 package com.gschoudhary.design.patterns.bahavioral.command;
-import test.collections.CollectionImports;
 public class DebitAmountImpl implements PaymentCommand {
     private AccountDetails accountDetails;
 

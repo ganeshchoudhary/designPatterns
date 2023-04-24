@@ -1,4 +1,4 @@
-package com.gschoudhary.design.patterns;
+package com.gschoudhary;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 

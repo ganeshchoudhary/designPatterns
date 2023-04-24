@@ -49,7 +49,7 @@ class CreationalDesignTest {
 
     @Test
     void prototype() throws CloneNotSupportedException {
-        BankAccount bankAccount = new BankAccount("test", "test", "test");
+        BankAccount bankAccount = new BankAccount("com/gschoudhary/io", "com/gschoudhary/io", "com/gschoudhary/io");
         System.out.println(bankAccount);
         BankAccount bankAccount2 = bankAccount.clone();
         bankAccount2.setBankName("clone");

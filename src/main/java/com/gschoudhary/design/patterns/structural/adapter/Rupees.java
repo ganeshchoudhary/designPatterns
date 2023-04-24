@@ -1,13 +1,13 @@
 package com.gschoudhary.design.patterns.structural.adapter;
 
 public class Rupees {
-    private int value;
+    private double value;
 
-    Rupees(int value) {
+    Rupees(double value) {
         this.value = value;
     }
 
-    public int getValue() {
+    public double getValue() {
         return this.value;
     }
 }
