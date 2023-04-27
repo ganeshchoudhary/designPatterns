@@ -60,6 +60,24 @@ public class MaxFrequency {
     }
 
     public static void main(String[] args) {
+        int[] array = new int[]{1, 2, 3, 4, 133, 4, 2};
         getMaxOccurredInt(new int[]{1, 2, 3, 4, 133, 4, 2});
+        List<Integer> list = new ArrayList<>();
+        for (int i : array) {
+            list.add(i);
+        }
+        char[] chars = list.stream().map(x -> String.valueOf(x))
+                .collect(Collectors.joining(""))
+                .toCharArray();
+        List<Character> characters = new ArrayList<>();
+        for (char c : chars) {
+            characters.add(c);
+        }
+      Map.Entry<Character, Long> entry =  characters.stream()
+                .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()))
+                .entrySet().stream()
+                .max(Map.Entry.comparingByValue())
+              .get();
+        System.out.println(" max frequency of " + entry.getKey() + " is " + entry.getValue());
     }
 }

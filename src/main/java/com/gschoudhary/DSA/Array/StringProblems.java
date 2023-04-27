@@ -26,7 +26,8 @@ public class StringProblems {
 
     public static void main(String[] args) {
         int [] values = {1,2,4,5,4};
-        Arrays.asList(values);
+
+        Arrays.asList(values).forEach(x-> System.out.println(x));
 
         IntStream.of(1,2,3,4).map(x-> 2*x).forEach(System.out::println);
 //        CharStream.of(1,2,3,4).map(x-> x).forEach(System.out::println);
