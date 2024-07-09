@@ -3,7 +3,7 @@ package com.bytecoder.design.patterns.structural.decorator.example1;
 public class ColorCarDecorator extends CarDecorator {
     private String color;
 
-    ColorCarDecorator(Car car, String color)  {
+    public ColorCarDecorator(Car car, String color)  {
         super(car);
         this.color = color;
     }

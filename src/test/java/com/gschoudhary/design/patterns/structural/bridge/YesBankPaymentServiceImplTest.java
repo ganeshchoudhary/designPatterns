@@ -7,7 +7,6 @@ import com.bytecoder.design.patterns.structural.bridge.CashPaymentModeService;
 import com.bytecoder.design.patterns.structural.bridge.UPIPaymentModeService;
 import com.bytecoder.design.patterns.structural.bridge.YesBankPaymentServiceImpl;
 
-import static org.junit.jupiter.api.Assertions.*;
 
 class YesBankPaymentServiceImplTest {
     YesBankPaymentServiceImpl yesBankPaymentService;

@@ -30,7 +30,7 @@ class DoublyLinkedListTest {
     void getIterator() {
       Iterator<DoublyNode> iterator = doublyLinkedList.getIterator(root);
       while (iterator.hasNext()){
-          System.out.println(iterator.next().data);
+          System.out.println(iterator.next().getData());
       }
     }
 
@@ -38,7 +38,7 @@ class DoublyLinkedListTest {
     void getReverseIterator() {
       Iterator<DoublyNode> iterator = doublyLinkedList.getReverseIterator(root);
       while (iterator.hasNext()){
-          System.out.println(iterator.next().data);
+          System.out.println(iterator.next().getData());
       }
     }
 }

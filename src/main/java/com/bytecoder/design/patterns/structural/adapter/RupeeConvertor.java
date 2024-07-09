@@ -5,7 +5,7 @@ public class RupeeConvertor implements CurrencyConvertor {
 
     private CurrencyType currencyType;
 
-    RupeeConvertor(int value, CurrencyType currencyType) {
+    public RupeeConvertor(int value, CurrencyType currencyType) {
         this.value = value;
         this.currencyType = currencyType;
     }

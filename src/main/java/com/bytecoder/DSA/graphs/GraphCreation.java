@@ -1,4 +1,4 @@
-package com.bytecoder.graphs;
+package com.bytecoder.DSA.graphs;
 
 import java.util.LinkedList;
 

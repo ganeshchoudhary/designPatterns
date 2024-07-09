@@ -3,7 +3,7 @@ package com.bytecoder.design.patterns.structural.bridge;
 public class CashPaymentModeService implements PaymentMode {
     public String paymentMode;
 
-    CashPaymentModeService() {
+    public CashPaymentModeService() {
         this.paymentMode = "Cash";
     }
 

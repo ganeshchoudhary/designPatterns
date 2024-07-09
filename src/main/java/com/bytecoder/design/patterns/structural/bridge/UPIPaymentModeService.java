@@ -1,9 +1,12 @@
 package com.bytecoder.design.patterns.structural.bridge;
 
+import lombok.Data;
+
+@Data
 public class UPIPaymentModeService implements PaymentMode {
     public String paymentMode;
 
-    UPIPaymentModeService() {
+    public UPIPaymentModeService() {
         this.paymentMode = "UPI";
     }
 

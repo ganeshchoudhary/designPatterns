@@ -3,7 +3,7 @@ package com.bytecoder.design.patterns.structural.bridge;
 public class YesBankPaymentServiceImpl implements PaymentService {
     private PaymentMode paymentMode;
 
-    YesBankPaymentServiceImpl(PaymentMode paymentMode) {
+    public YesBankPaymentServiceImpl(PaymentMode paymentMode) {
         this.paymentMode = paymentMode;
     }
 

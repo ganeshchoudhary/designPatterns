@@ -1,10 +1,13 @@
 package com.bytecoder.design.patterns.bahavioral.iterator;
 
+import lombok.Data;
+
+@Data
 public class DoublyNode {
 
     int data;
     DoublyNode next, previous;
-    DoublyNode(int data){
+   public DoublyNode(int data){
         this.data=data;
     }
 }

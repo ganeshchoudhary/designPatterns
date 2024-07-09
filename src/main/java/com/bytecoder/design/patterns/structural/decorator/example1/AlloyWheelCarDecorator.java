@@ -1,7 +1,7 @@
 package com.bytecoder.design.patterns.structural.decorator.example1;
 
 public class AlloyWheelCarDecorator extends CarDecorator {
-    AlloyWheelCarDecorator(Car car) {
+    public AlloyWheelCarDecorator(Car car) {
         super(car);
     }
 
