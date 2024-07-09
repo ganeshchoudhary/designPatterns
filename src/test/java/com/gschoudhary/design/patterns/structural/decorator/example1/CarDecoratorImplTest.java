@@ -3,6 +3,11 @@ package com.gschoudhary.design.patterns.structural.decorator.example1;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import com.bytecoder.design.patterns.structural.decorator.example1.AlloyWheelCarDecorator;
+import com.bytecoder.design.patterns.structural.decorator.example1.Car;
+import com.bytecoder.design.patterns.structural.decorator.example1.CarImplementation;
+import com.bytecoder.design.patterns.structural.decorator.example1.ColorCarDecorator;
+
 class CarDecoratorImplTest {
     Car car = new CarImplementation("Honda City", "SX", 1500000);
 

@@ -1,5 +1,0 @@
-package com.gschoudhary.design.patterns.bahavioral.command;
-
-public interface PaymentCommand {
-    void execute();
-}

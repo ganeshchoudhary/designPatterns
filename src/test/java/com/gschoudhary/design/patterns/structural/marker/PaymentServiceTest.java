@@ -4,6 +4,12 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import com.bytecoder.design.patterns.structural.marker.BharatPayPaymentService;
+import com.bytecoder.design.patterns.structural.marker.MarkerInterface;
+import com.bytecoder.design.patterns.structural.marker.PaymentService;
+import com.bytecoder.design.patterns.structural.marker.PaytmPaymentService;
+import com.bytecoder.design.patterns.structural.marker.PhonePayPaymentService;
+
 import java.util.ArrayList;
 import java.util.List;
 

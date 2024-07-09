@@ -1,13 +1,16 @@
 package com.gschoudhary.design.patterns.creational;
 
-import com.gschoudhary.design.patterns.creational.Singleton.User;
-import com.gschoudhary.design.patterns.creational.factorymethod.Bank;
-import com.gschoudhary.design.patterns.creational.factorymethod.BankFactory;
-import com.gschoudhary.design.patterns.creational.factorymethod.BankFactoryImpl;
-import com.gschoudhary.design.patterns.creational.factorymethod.IciciBank;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import com.bytecoder.design.patterns.creational.BankAccount;
+import com.bytecoder.design.patterns.creational.Person;
+import com.bytecoder.design.patterns.creational.Singleton.User;
+import com.bytecoder.design.patterns.creational.factorymethod.Bank;
+import com.bytecoder.design.patterns.creational.factorymethod.BankFactory;
+import com.bytecoder.design.patterns.creational.factorymethod.BankFactoryImpl;
+import com.bytecoder.design.patterns.creational.factorymethod.IciciBank;
 
 class CreationalDesignTest {
     @BeforeEach

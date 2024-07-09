@@ -1,9 +1,10 @@
 package com.gschoudhary.design.patterns.structural.facade;
 
-import com.gschoudhary.design.patterns.structural.facade.example1.PaymentService;
-import com.gschoudhary.design.patterns.structural.facade.example1.PaymentServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import com.bytecoder.design.patterns.structural.facade.example1.PaymentService;
+import com.bytecoder.design.patterns.structural.facade.example1.PaymentServiceImpl;
 
 class PaymentServiceImplTest {
 

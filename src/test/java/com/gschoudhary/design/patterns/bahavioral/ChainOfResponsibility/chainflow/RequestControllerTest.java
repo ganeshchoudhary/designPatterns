@@ -1,6 +1,11 @@
 package com.gschoudhary.design.patterns.bahavioral.ChainOfResponsibility.chainflow;
-import com.gschoudhary.design.patterns.bahavioral.ChainOfResponsibility.*;
 import org.junit.jupiter.api.Test;
+
+import com.bytecoder.design.patterns.bahavioral.ChainOfResponsibility.*;
+import com.bytecoder.design.patterns.bahavioral.ChainOfResponsibility.chainflow.AuthenticationHandler;
+import com.bytecoder.design.patterns.bahavioral.ChainOfResponsibility.chainflow.CustomHandler;
+import com.bytecoder.design.patterns.bahavioral.ChainOfResponsibility.chainflow.RequestController;
+import com.bytecoder.design.patterns.bahavioral.ChainOfResponsibility.chainflow.RequestHandlerImpl;
 
 class RequestControllerTest {
     RequestHandlerImpl requestHandler = new RequestHandlerImpl();
