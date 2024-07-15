@@ -1,4 +1,4 @@
-package com.bytecoder.oops.inheritance;
+package com.bytecoder.java8.oops.inheritance;
 
 public class Animal {
 
