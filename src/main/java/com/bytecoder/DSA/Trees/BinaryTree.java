@@ -5,63 +5,42 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
-public class BinarySearchTree<T extends Comparable<T>> implements Tree<T> {
+
+public class BinaryTree<T extends Comparable<T>> implements Tree<T> {
 
     private Node<T> root;
 
-    public BinarySearchTree() {
+    public BinaryTree() {
     }
 
-    public Node getRoot() {
+    @Override
+    public Node<T> getRoot() {
         return root;
     }
 
-    public Node<T> insertNode_v2(T data, Node<T> node) {
-
-        if (node == null) {
-            return new Node<>(data);
-        }
-        if (node.getData().compareTo(data) > 0) {
-            node.setLeftChild(insertNode_v2(data, node.getLeftChild()));
-        } else {
-            node.setRightChild(insertNode_v2(data, node.getRightChild()));
-        }
-        return node;
-    }
-
-
-    public void insertNode(T data, Node<T> node) {
-        if (node.getData().compareTo(data) > 0) {
-            if (node.getLeftChild() != null) {
-                insertNode(data, node.getLeftChild());
-
-            } else {
-                node.setLeftChild(new Node<>(data));
-
-            }
-        } else {
-            if (node.getRightChild() != null) {
-                insertNode(data, node.getRightChild());
-            } else {
-                node.setRightChild(new Node<>(data));
-            }
-        }
-    }
 
     @Override
     public Tree<T> insert(T data) {
         if (this.isEmpty()) {
             root = new Node(data);
-        } else {
-            insertNode(data, root);
+            return this;
+        }
+        Queue<Node<T>> queue = new LinkedList<>();
+        while (!queue.isEmpty()) {
+            Node<T> temp = queue.poll();
+            if (temp.getLeftChild() == null) {
+                temp.setLeftChild(new Node<>(data));
+            } else {
+                queue.add(temp.getLeftChild());
+            }
+
+            if (temp.getRightChild() == null) {
+                temp.setRightChild(new Node<>(data));
+            } else {
+                queue.add(temp.getRightChild());
+            }
         }
         return this;
-    }
-
-    @Override
-    public void delete(T data) {
-
-
     }
 
 
@@ -86,16 +65,43 @@ public class BinarySearchTree<T extends Comparable<T>> implements Tree<T> {
 
 
     @Override
+    public void delete(T data) {
+
+
+    }
+
+
+    private int max_value= Integer.MIN_VALUE;
+
+    private int get_max(Node node) {
+        if (node == null) {
+            return max_value;
+        }
+        if (node.getData().compareTo(max_value) > 0) {
+            max_value = (int) node.getData();
+        }
+        get_max(node.getLeftChild());
+        get_max(node.getRightChild());
+        return max_value;
+    }
+
+    private int get_max_m2(Node node) {
+
+        return max_value;
+    }
+
+
+    @Override
     public int getMax() {
         if (isEmpty()) {
-            return -1;
+            return max_value;
         }
-        Node<T> curr = root;
-        while (curr.getRightChild() != null) {
-            curr = curr.getRightChild();
+        int m1 = get_max(root);
+        int m2 = get_max_m2(root);
+        if (m1-m2 != 0) {
+            throw new RuntimeException("Both M1 and M2 results are not same");
         }
-
-        return (int) curr.getData();
+        return max_value;
     }
 
 
@@ -104,11 +110,8 @@ public class BinarySearchTree<T extends Comparable<T>> implements Tree<T> {
         if (isEmpty()) {
             return -1;
         }
-        Node<T> curr = root;
-        while (curr.getLeftChild() != null) {
-            curr = curr.getLeftChild();
-        }
-        return (int) curr.getData();
+
+        return -1;
     }
 
     @Override
