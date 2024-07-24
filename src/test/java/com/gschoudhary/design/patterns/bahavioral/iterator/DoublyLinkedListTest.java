@@ -3,12 +3,10 @@ package com.gschoudhary.design.patterns.bahavioral.iterator;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import com.bytecoder.design.patterns.bahavioral.iterator.DoublyLinkedList;
-import com.bytecoder.design.patterns.bahavioral.iterator.DoublyNode;
+import com.bytecoder.DesignPatterns.bahavioral.iterator.DoublyLinkedList;
+import com.bytecoder.DesignPatterns.bahavioral.iterator.DoublyNode;
 
 import java.util.Iterator;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class DoublyLinkedListTest {
     DoublyNode root;

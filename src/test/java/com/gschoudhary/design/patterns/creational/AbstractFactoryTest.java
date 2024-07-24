@@ -4,11 +4,11 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import com.bytecoder.design.patterns.creational.abstractfactory.AbstractFactory;
-import com.bytecoder.design.patterns.creational.abstractfactory.AndroidAbstractFactory;
-import com.bytecoder.design.patterns.creational.abstractfactory.IOSAbstractFactory;
-import com.bytecoder.design.patterns.creational.abstractfactory.button.Button;
-import com.bytecoder.design.patterns.creational.abstractfactory.textbox.TextBox;
+import com.bytecoder.DesignPatterns.creational.abstractfactory.AbstractFactory;
+import com.bytecoder.DesignPatterns.creational.abstractfactory.AndroidAbstractFactory;
+import com.bytecoder.DesignPatterns.creational.abstractfactory.IOSAbstractFactory;
+import com.bytecoder.DesignPatterns.creational.abstractfactory.button.Button;
+import com.bytecoder.DesignPatterns.creational.abstractfactory.textbox.TextBox;
 
 class AbstractFactoryTest {
     AbstractFactory iosAbstractFactory;

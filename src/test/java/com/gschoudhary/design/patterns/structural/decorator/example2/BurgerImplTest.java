@@ -3,10 +3,10 @@ package com.gschoudhary.design.patterns.structural.decorator.example2;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import com.bytecoder.design.patterns.structural.decorator.example2.Burger;
-import com.bytecoder.design.patterns.structural.decorator.example2.BurgerImpl;
-import com.bytecoder.design.patterns.structural.decorator.example2.CheeseBurgerDecorator;
-import com.bytecoder.design.patterns.structural.decorator.example2.ExtraVeggieBurgerDecorator;
+import com.bytecoder.DesignPatterns.structural.decorator.example2.Burger;
+import com.bytecoder.DesignPatterns.structural.decorator.example2.BurgerImpl;
+import com.bytecoder.DesignPatterns.structural.decorator.example2.CheeseBurgerDecorator;
+import com.bytecoder.DesignPatterns.structural.decorator.example2.ExtraVeggieBurgerDecorator;
 
 class BurgerImplTest {
     Burger burger = new BurgerImpl();

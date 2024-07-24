@@ -3,9 +3,9 @@ package com.gschoudhary.design.patterns.structural.bridge;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import com.bytecoder.design.patterns.structural.bridge.CashPaymentModeService;
-import com.bytecoder.design.patterns.structural.bridge.UPIPaymentModeService;
-import com.bytecoder.design.patterns.structural.bridge.YesBankPaymentServiceImpl;
+import com.bytecoder.DesignPatterns.structural.bridge.CashPaymentModeService;
+import com.bytecoder.DesignPatterns.structural.bridge.UPIPaymentModeService;
+import com.bytecoder.DesignPatterns.structural.bridge.YesBankPaymentServiceImpl;
 
 
 class YesBankPaymentServiceImplTest {
