@@ -1,4 +1,4 @@
-package com.bytecoder.DSA.graphs;
+package com.bytecoder.DSA.Graphs;
 
 import lombok.Data;
 

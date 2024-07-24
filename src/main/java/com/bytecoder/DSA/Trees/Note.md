@@ -33,7 +33,12 @@ public static class Node<T extends Comparable<T>> {
 * Search − Searches specific data in a tree to check whether it is present or not.
 * Traversal:
   * Depth-First-Search Traversal
+    * In-order
+    * pre-order
+    * post-order
   * Breadth-First-Search Traversal
+    * level order 
+### note: inoreder with any other combination can form a tree
 
 | cc  |   |   |   |   |
 |-----|---|---|---|---|
